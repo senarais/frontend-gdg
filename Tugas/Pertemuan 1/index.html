@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Portofolio HTML</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tugas membuat website portofolio sederhana">
+    <meta name="author" content="Brandon Junior">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <!-- Gunakan: <header>, <h1>, <nav>, <a>, <hr> -->
+    <header>
+        <h1>Portofolio Saya</h1>
+        <nav>
+            <a href="#hero">Hero</a> |
+            <a href="#about">Tentang</a> |
+            <a href="#skills">Skill</a> |
+            <a href="#projects">Project</a> |
+            <a href="#contact">Kontak</a>
+        </nav>
+        <hr>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <!-- 
+    TODO 1:
+    Buat bagian perkenalan. Perkenalkan Diri kalian dan tambahkan foto.
+
+    Wajib ada:
+    - <h2>
+    - Nama di dalam <span id="heroName">
+    - 1 <p>
+    - 1 <img>
+    -->
+    <section id="hero">
+        <h2>Halo, Saya <span id="heroName">Nama Kamu</span></h2>
+    </section>
+
+    <hr>
+
+
+    <!-- ================= ABOUT ================= -->
+    <!-- 
+    TODO 2:
+    Buat bagian Tentang Saya. Jelaskan Diri kalian.
+
+    Wajib ada:
+    - <h2>
+    - <div>
+    - minimal 1 <p>
+    -->
+    <section id="about">
+    </section>
+
+    <hr>
+
+
+    <!-- ================= SKILLS ================= -->
+    <!-- 
+    TODO 3:
+    Buat bagian Skill.
+
+    Wajib ada:
+    - <h2>
+    - 1 <h3> untuk Hard Skill
+    - 1 <ul> dengan minimal 3 <li>
+    - 1 <h3> untuk Soft Skill
+    - 1 <ol> dengan minimal 3 <li>
+    -->
+    <section id="skills">
+    </section>
+
+    <hr>
+
+
+    <!-- ================= PROJECT ================= -->
+    <!-- 
+    TODO 4:
+    Buat minimal 2 project.
+
+    Setiap project wajib ada:
+    - <div>
+    - <h3>
+    - <img> (img boleh pakai gambar yang sudah disediakan. OPSIONAL)
+    - <p>
+    - <a target="_blank">
+    -->
+    <section id="projects">
+    </section>
+
+    <hr>
+
+
+    <!-- ================= CONTACT ================= -->
+    <!-- 
+    TODO 5:
+    Buat form kontak.
+
+    CATATAN : FORM KETIKA DI SUBMIT AKAN MENGUBAH NAMA DI HERO SECTION.
+
+    Wajib ada:
+    - <form id="contactForm">
+    - Input Nama (id="nama")
+    - Input Email
+    - <textarea> untuk Pesan
+    - <button type="submit">
+    -->
+    <section id="contact">
+        <form id="contactForm" method="post">
+        </form>
+    </section>
+
+    <hr>
+
+
+    <!-- ================= FOOTER ================= -->
+    <!-- 
+    TODO 6:
+    Buat footer.
+
+    Wajib ada:
+    - <footer>
+    - <p>
+    -->
+    <footer>
+    </footer>
+
+
+
+    <!-- =================================================== -->
+    <!-- =================== WARNING ======================= -->
+    <!-- ======= JANGAN UBAH SCRIPT DI BAWAH INI =========== -->
+    <!-- =================================================== -->
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var namaInput = document.getElementById("nama").value;
+            var heroName = document.getElementById("heroName");
+
+            if(namaInput.trim() !== "") {
+                heroName.textContent = namaInput;
+            }
+        });
+    </script>
+
+</body>
+</html>
