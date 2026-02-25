@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Portofolio Saya</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website portofolio sederhana pure HTML">
+    <meta name="author" content="Brandon Junior">
+
+    <!-- Wajib menambahkan tag ini agar media queries bekerja -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header style="background-color: lightgray; padding: 15px; text-align: center; border-bottom: 2px solid #ccc;">
+        <h1>Portofolio Saya</h1>
+        <nav>
+            <a href="#about">Tentang</a> |
+            <a href="#skills">Skill</a> |
+            <a href="#projects">Project</a> |
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="container">
+        <h2>Halo, Saya <span id="heroName">Brandon Junior</span></h2>
+        <p>Saya seorang <strong>Web Developer</strong> yang sedang belajar <em>HTML fundamental</em>.</p>
+        <img src="./img/profile.jpg" alt="Foto Profil" class="profile-img">
+    </section>
+
+    <section id="about" class="container">
+        <h2>Tentang Saya</h2>
+        <div>
+            <p>
+                Saya tertarik pada dunia web development dan sedang fokus mempelajari HTML
+                sebagai dasar sebelum lanjut ke CSS dan JavaScript.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2>Skill Saya</h2>
+        <div class="skills-wrapper">
+            <div>
+                <h3>Hard Skill</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Soft Skill</h3>
+                <ol>
+                    <li>Problem Solving</li>
+                    <li>Communication</li>
+                    <li>Team Work</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Project Saya</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <img src="./img/amazon.jpg" alt="Project Amazon">
+            <p>Website Amazon</p>
+            <a target="_blank" href="https://www.amazon.com/" class="btn">Lihat Detail</a>
+        </div>
+        <br>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <img src="./img/chatgpt.png" alt="Project ChatGPT">
+            <p>Website ChatGPT</p>
+            <a target="_blank" href="https://chatgpt.com/" class="btn">Lihat Detail</a>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Kontak Saya</h2>
+        <form id="contactForm" method="post">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan"></textarea><br><br>
+
+            <label for="kategori">Kategori:</label><br>
+            <select id="kategori" name="kategori">
+                <option value="kerjasama">Kerjasama</option>
+                <option value="project">Project</option>
+                <option value="lainnya">Lainnya</option>
+            </select><br><br>
+
+            <button type="submit" class="btn">Kirim</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Brandon Junior. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var namaInput = document.getElementById("nama").value;
+            var heroName = document.getElementById("heroName");
+
+            if(namaInput.trim() !== "") {
+                heroName.textContent = namaInput;
+            }
+        });
+    </script>
+</body>
+</html>
