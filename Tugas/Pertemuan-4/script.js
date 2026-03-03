@@ -7,24 +7,24 @@ Output: Muncul di Console (Klik Kanan -> Inspect -> Console).
 
 // TODO I: Hubungkan file script.js ke HTML
 
-// TODO 1: Variabel & Tipe Data [cite: 160, 248]
+// TODO 1: Variabel & Tipe Data 
 // Wajib ada:
-// - 1 variabel const untuk 'nama' (String)[cite: 167, 268].
-// - 1 variabel let untuk 'tahunLahir' (Number)[cite: 168, 251].
-// - 1 variabel let untuk 'isStudent' (Boolean)[cite: 168, 252].
+// - 1 variabel const untuk 'nama' (String)
+// - 1 variabel let untuk 'tahunLahir' (Number)
+// - 1 variabel let untuk 'isStudent' (Boolean)
 
 
-// TODO 2: Operator & Template Literals [cite: 308, 393]
+// TODO 2: Operator & Template Literals 
 // Wajib ada:
-// - Variabel 'usia' yang menghitung: 2026 dikurangi 'tahunLahir'[cite: 320, 361].
+// - Variabel 'usia' yang menghitung: 2026 dikurangi 'tahunLahir'
 // - Gunakan console.log() dan Template Literals (backtick `) untuk menampilkan pesan:
-//   "Halo, saya [nama]. Usia saya saat ini adalah [usia] tahun."[cite: 399].
+//   "Halo, saya [nama]. Usia saya saat ini adalah [usia] tahun."
 
 
-// TODO 3: Function & Conditional [cite: 467, 612]
+// TODO 3: Function & Conditional 
 // Wajib ada:
-// - 1 function bernama 'cekStatus' yang menerima parameter 'usia'[cite: 618, 637].
-// - Di dalam function, gunakan IF-ELSE[cite: 486]:
-//   * Jika usia >= 18, return "Sudah Dewasa"[cite: 647, 651].
-//   * Jika usia < 18, return "Masih Muda"[cite: 647, 651].
-// - Panggil function tersebut dan tampilkan hasilnya di console[cite: 634, 657].
+// - 1 function bernama 'cekStatus' yang menerima parameter 'usia'
+// - Di dalam function, gunakan IF-ELSE
+//   * Jika usia >= 18, return "Sudah Dewasa"
+//   * Jika usia < 18, return "Masih Muda"
+// - Panggil function tersebut dan tampilkan hasilnya di console
